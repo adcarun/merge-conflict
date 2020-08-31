@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#F5F5F5; font-family: Verdana, Geneva, sans-serif; font-size:12px; color:#333;}
+.clear{ clear:both; margin:0; padding:0;}
+a{color:#06C; text-decoration:none; outline:none!important;}
+a:hover{ text-decoration: underline;}
+.topWrap{ width:100%; float:left; height:120px; border-bottom: 1px #ebebeb solid; background:#fff;}
+.topWrap .header{ width:980;   margin:0 auto; }
+
+/*-----header---------*/
+.wrapper{ margin:0 auto; width:980px; }
+.logo{ width:110px;   float:left; height:110px;}
+.logo img{ width:108px; height:108px; margin:10px;}
+.logoText{float:left; margin:40px 20px; font-family:Georgia, 'Times New Roman', Times, serif; font-size:32px; font-style:italic; color:#06C; line-height:28px;}
+.logoText a:hover{ text-decoration:none;}
+.headerRight{  float:right; margin:40px 0;}
+
+.searchArea{border:1px solid #DBDCDD;  -moz-border-radius:5px; border-radius:5px; -webkit-border-radius:5px; width:180px; height:27px; background:url(../images/search.png) 10px 8px no-repeat #fff; margin:20px 35px 20px 20px; padding:3px 3px 3px 15px; float:right;}
+.searchArea input.searchtxt{ width:120px; float:left; height:24px; background:#fff; border:none; outline:none; color:#B8B8B8; font-size:12px; font-family:Arial, Helvetica, sans-serif; font-style:italic; line-height:40px; margin:2px 0; }
+.searchArea input.searchbtn{ width:55px; float:right; height:27px; background:#ffd659 ; border:none; outline:none; text-align:center; line-height:20px; color:#3D5E14; font-size:12px; 
+font-family: Verdana, Geneva, sans-serif; cursor:pointer; text-decoration:none; overflow:hidden; padding:0;}
+.searchArea input.searchbtn:hover{ color:#333;}
+
+/*--------mainMenu-----------*/
+/*
+.mainMenu{  height:40px; float:left; max-width:700px;}
+.mainMenu ol {float:left;  padding: 14px 0px; }
+.mainMenu ol li{ display: inline; padding: 10px 0px 0px 25px; }
+.mainMenu ol li a{ text-decoration:none; font-family:Verdana, Geneva, sans-serif; font-size:14px; color:#0060a9; line-height:20px;}
+.mainMenu ol li a:hover{ text-decoration:none;  color:#036;}
+
+*/
+.menuWrap{ width:100%; background:#ffeaac; float:left; height:40px; border-bottom: 1px #ebebeb solid;}
+.menuArea {
+	
+	float:left; width:100%;
+	padding:0;
+	margin:  0;
+	background:url(../images/menu-bg.png) left top no-repeat;
+}
+/*---------------------------------- Main menu as below ---------------------------------------*/
+.mainMenu {
+	
+	margin:0; width:100%;
+	padding:0;
+	float:left;
+	height:40px; position:relative; z-index:100000;
+}
+
+
+#dd {
+	position:relative; width:97%;
+	/*width:920px;*/
+	height:40px;
+
+	padding:0 0 0 0px;
+	float:left;
+}
+.menustyle ul {
+	margin: 0;
+	padding:0;
+}
+.menustyle ul li {
+	float:left;
+	display:inline;
+	padding:0px;
+	position:relative; z-index:200;
+	list-style:none;
+	background:url(../images/menu-divider.jpg) right top repeat-y;
+	 margin:0px 15px;
+}
+.menustyle ul li a {
+	text-decoration:none;
+	color:#000; height:30px;
+	line-height:28px;
+	float:left;
+	font-family: Verdana, Geneva, sans-serif; text-transform:uppercase;
+	font-size:13px;
+	padding:5px 10px;
+	display:block; 
+	
+}
+.menustyle ul li a:hover {
+	
+	 background:#FCFCFC;
+		
+}
+.menustyle ul li:hover div a {
+	background:#FCFCFC;
+}
+
+.RightLink{  float:right!important; background:#FFD659!important; margin:0 10px 0 0!important; padding:0 10px!important;}
+.RightLink a:hover{ background:none!important; color:#039;}
+
+/*-----------------------*/
+
+.submenu {
+	position:absolute; font-family: 'ArialRegular';
+	left:0px!important;
+	background:#fcfcfc !important;
+	width:230px;
+	z-index:100000!important;
+	margin-top:0px;
+	visibility:hidden; /*right:0px;*/
+	top:25px !important;
+	padding:10px;
+	border:none;
+}
+.menustyle ul li ul.submenu li {
+	float:left;
+	width:220px!important;
+	border-bottom:1px #333 dotted;
+	background:none;
+	height:20px; padding:5px 0!important; margin:0!important;
+}
+.menustyle ul li ul.submenu {
+	padding:10px 2px;
+	margin-top:10px;
+}
+.menustyle ul li ul.submenu li a {
+	padding:0px 10px;
+	line-height:normal;
+	color:#000;
+	text-shadow:none!important;
+	background: none;
+	line-height:20px;
+	text-decoration:none; text-transform: none!important;
+	font-size:12px;
+}
+.menustyle ul li ul.submenu li a:hover {
+	color:#333333;
+}
+
+
+
+/*-----------------------------------Min Menu Active Classes----------------------------*/
+	#pghome .pghome, #pgabout .pgabout, #pgservices .pgservices, #pgcontact .pgcontact{text-decoration:none;
+		color:#000; height:20px;
+	line-height:24px;
+	float:left;
+	font-family: 'ArialRegular'; text-transform:uppercase;
+	font-size:14px;
+	padding:5px 10px;
+	display:block; background: url(../images/menu-hover.png) left top repeat-x #EFEFEF;
+		-moz-border-radius:5px; border-radius:5px;
+-webkit-border-radius:5px; }
+
+
+/*------------------------------------Main menu End------------------------------------*/
+
+
+/*---------footer------------------*/
+
+.footer{ width:100%; float: left; border-top:1px #ebebeb solid; background:#fff;}
+.footerWrap{ margin:0 auto;  width:940px; height:50px; background:#ffF; }
+
+.footerLeft{ float:left;     margin:10px 0px;   color:#333;}
+.footerRight{ float:right;     margin:10px 0px;   color:#333;}
+.footerRight a{   font-size:11px; color:#cdcdcd; text-decoration:none;}
+.footerRight a:hover{   font-size:11px; color:#333333; text-decoration:none;}
+
+/*-----content----------------*/
+.contentWrap{width:100%; float:left; margin:20px 0;  }
+.content{width:940px; padding:18px;  margin:0 auto; border-left:1px solid #fcfcfc; border-right:1px solid #fcfcfc;}
+
+.date{font-size:12px; float:left; display:block; margin:3px 0; color:#AA8C46; clear:both;}
+.textual{ float:left; display:block; margin:5px 0;}
+
+
+
+
+
+/*------------------------------- Inner Pages Styles ------------------------------------*/
+.pageFullContent{float:left; width:920px; overflow:hidden; background:#fff; padding:10px;
+border:1px solid #DBDBDB;
+-moz-border-radius:7px; border-radius:7px;
+-webkit-border-radius:7px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333; line-height:20px;}
+
+.pageFullContent h1{ font-size:21px; color:#065291; line-height:30px; margin:0 0 10px 0; font-family: Verdana, Geneva, sans-serif;}
+.bannerInn{ width:695px; height:110px; background:none;  }
+.tagline{ width:100%; float:left; border-bottom:1px dotted #9E9E9E; heig t:30px; margin:10px 0; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333; line-height:20px; font-style:italic;}
+
+
+
+
+.leftContent{ float:left; width:660px; margin:0; padding:0; border-right:1px dotted #DBDBDB; padding:0 20px 0 10px; }
+
+.rightContent{float:left; max-width:205px; margin:0 0 0 10px; padding:10px 5px;}
+.rightContent .imgDiv { width:96%; float:left; padding:10px; background:#FDF9EC!important; clear:both; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#06C!important; line-height:20px; font-style:italic; border:1px dotted #9E9E9E;}
+.rightContent span{ float:left; clear:both; margin:10px 0; text-align:center; color:#06C!important;}
+.rightContent .imgDiv img{ max-width:180px; clear:both; float:left; border:5px solid #3F7AAB;}
